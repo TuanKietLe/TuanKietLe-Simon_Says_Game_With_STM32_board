@@ -8,15 +8,34 @@ Tuan Kiet Le - Electrical Engineering
 * Audio Feedback: Buzzer generates unique tones for each color
 * Adjustable Difficulty: Three difficulty levels (Easy, Medium, Hard)
 * Progressive Gameplay: Up to 10 levels with increasing sequence length
-## Introduction
-For this project, I am designing a custom PCB for a "magic wand" that brings a touch of enchantment through a sequence of blinking LEDs. The goal of the project is to create a compact, handheld wand that lights up in a programmed pattern, simulating a magical effect. Using simple IC digital chips and a series of LEDs, this project will cover essential PCB design principles, including component layout, circuit routing, and power management. The wand will create dazzling light sequences, offering an interactive and visually engaging experience. This project not only combines electronics with creativity but also offers hands-on experience in designing a functional and aesthetic PCB.
-## Project Result
-The aim of this project is to create a PCB-based "magic wand" that performs a dynamic LED blinking sequence, adjustable by user input. The circuit will utilize IC components such as the 555 timer, binary counter, and decoder, with two potentiometers to adjust the LED blinking speed.
+## Hardware Components
+* STM32L476 microcontroller
+* 8 LEDs (4 for game pattern, 4 for feedback)
+* 8 Push buttons
+* 16x2 LCD display with shift register interface
+* Buzzer for audio output
+* Breadboard and connecting components
+## Pin Configuration
+### Game LEDs
+* Red LED: PC10
+* Yellow LED: PC11
+* Blue LED: PH0
+* Green LED: PC2
+### Game Buttons
+* Red Button: PC12
+* Yellow Button: PD2
+* Blue Button: PH1
+*Green Button: PC3
+Control Buttons
 
-The 555 timer generates the clock pulses, whose frequency can be adjusted using the potentiometers. The clock signal drives the binary counter, which outputs sequential signals. These are then processed by the decoder to illuminate each LED in a specific sequence, creating a flowing or animated effect.
+SW5 (PB8): Start game
+SW4 (PB9): Increase difficulty
+SW3 (PB10): Decrease difficulty
 
-This design emphasizes user interaction, low power consumption, and precise control of LED timing, making the wand visually engaging and customizable.
-## Materials Used
+Audio & Display
+
+Buzzer: PC9
+LCD Interface: PA5 (clock), PA10 (latch), PB5 (data)
 * 3 AAA battery holder.
 * 1 TI CD74HC138E: IC DECODER/DEMUX 1X3:8 16DIP.
 * 1 TI SN74HC393N: IC BINARY COUNTER DL 4BIT 14DIP.
