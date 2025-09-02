@@ -26,27 +26,11 @@ Tuan Kiet Le - Electrical Engineering
 * Yellow Button: PD2
 * Blue Button: PH1
 *Green Button: PC3
-Control Buttons
+### Control Buttons
+* SW5 (PB8): Start game
+* SW4 (PB9): Increase difficulty
+* SW3 (PB10): Decrease difficulty
+### Audio & Display
+* Buzzer: PC9
+* LCD Interface: PA5 (clock), PA10 (latch), PB5 (data)
 
-SW5 (PB8): Start game
-SW4 (PB9): Increase difficulty
-SW3 (PB10): Decrease difficulty
-
-Audio & Display
-
-Buzzer: PC9
-LCD Interface: PA5 (clock), PA10 (latch), PB5 (data)
-* 3 AAA battery holder.
-* 1 TI CD74HC138E: IC DECODER/DEMUX 1X3:8 16DIP.
-* 1 TI SN74HC393N: IC BINARY COUNTER DL 4BIT 14DIP.
-* 1 LM 555 : 555 Timer.
-* 8 100 Ohm Resistors.
-* 2 100K Potentiometer.
-* 1 Switch.
-* 8 Green LEDs.
-* 1 47uF Electrolytic capacitor.
-* 4 0.1uF Ceramic capacitor.
-* 1 10uF Ceramic capacitor.
-## Works Cited
-* Crash Course Electronics and PCB design. https://www.udemy.com/course/crash-course-electronics-and-pcb-design/?kw=PCB+crash&src=sac&couponCode=ST20MT111124B
-* 555 Oscillator Works. https://www.electronics-tutorials.ws/waveforms/555_oscillator.html
